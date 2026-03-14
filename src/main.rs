@@ -1,4 +1,4 @@
-use llp_indexer::handler;
+use met_ray_indexer::handler;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {

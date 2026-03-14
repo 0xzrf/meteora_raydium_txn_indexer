@@ -1,6 +1,6 @@
 #[cfg(test)]
 pub mod test_fetch_tokens {
-    use llp_indexer::{helper::is_devnet, parser::api_parsers::*};
+    use met_ray_indexer::{helper::is_devnet, parser::api_parsers::*};
 
     #[tokio::test]
     pub async fn test_get_tokens_damm_v2() {

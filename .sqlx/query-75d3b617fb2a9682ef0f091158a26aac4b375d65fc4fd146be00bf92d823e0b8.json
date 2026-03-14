@@ -1,0 +1,33 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n            INSERT INTO activities (\n                user_pubkey,\n                pool_type,\n                total_withdraw,\n                total_deposit,\n                position_nft,\n                token_a,\n                token_b,\n                pool_address,\n                txn_sig,\n                decimal_a,\n                decimal_b,\n                claimed_fee\n            )\n            VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11, $12)\n            RETURNING id\n            ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int8"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Text",
+        "Text",
+        "Float8",
+        "Float8",
+        "Text",
+        "Text",
+        "Text",
+        "Text",
+        "Text",
+        "Int2",
+        "Int2",
+        "Float8"
+      ]
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "75d3b617fb2a9682ef0f091158a26aac4b375d65fc4fd146be00bf92d823e0b8"
+}

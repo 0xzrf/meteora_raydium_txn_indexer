@@ -1,4 +1,4 @@
-# LLP Indexer
+# MET-Ray Indexer
 
 A Rust-based indexer for Laserstream that supports both mainnet and devnet environments.
 
